@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -3.05 -3.06 0)
+		(at 0 -2.2 0)
 		(layer "F.SilkS")
 		(uuid "b2c7fc9b-6f16-4d7a-818b-f9fe77dc8a51")
 		(effects
@@ -17,6 +17,7 @@
 	(property "Value" "DIOAD1036W78L470D235"
 		(at 6.475 3.06 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "9d90ddba-7815-481e-a879-ca9d60398d46")
 		(effects
 			(font
@@ -89,6 +90,46 @@
 		)
 		(layer "F.SilkS")
 		(uuid "e0744502-668f-4516-8239-b915f57ee1c8")
+	)
+	(fp_line
+		(start -1 -1)
+		(end -1 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "092ac2d4-a600-4a19-82c9-a87ade96c958")
+	)
+	(fp_line
+		(start 1 -1)
+		(end -1 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5f88ead2-c8f2-4e50-9cbf-d530d97d835b")
+	)
+	(fp_line
+		(start 1 1)
+		(end -1 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "877f6a49-b250-4d22-a1eb-bc08eeb02c44")
+	)
+	(fp_line
+		(start 1 1)
+		(end 1 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6de9a76b-3f32-4e53-95d0-3807bfa36ed7")
 	)
 	(fp_line
 		(start 2.35 -1.175)
@@ -272,16 +313,7 @@
 		(layer "F.Fab")
 		(uuid "0365436e-9faf-46e9-bc81-e60764d1fa1a")
 	)
-	(pad "A" thru_hole circle
-		(at 5.18 0)
-		(size 1.59 1.59)
-		(drill 1.06)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(solder_mask_margin 0.102)
-		(uuid "e582b692-1543-49e1-83e4-f8f44056f974")
-	)
-	(pad "C" thru_hole rect
+	(pad "1" thru_hole rect
 		(at -5.18 0)
 		(size 1.59 1.59)
 		(drill 1.06)
@@ -289,6 +321,15 @@
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
 		(uuid "b3965bb4-cee6-48fe-9833-9afcf9cdff49")
+	)
+	(pad "2" thru_hole circle
+		(at 5.18 0)
+		(size 1.59 1.59)
+		(drill 1.06)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "e582b692-1543-49e1-83e4-f8f44056f974")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/bowelProbe_3D/1N5817.STEP"

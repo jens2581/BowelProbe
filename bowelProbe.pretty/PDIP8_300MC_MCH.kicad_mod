@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(tags "MCP6002-E/P ")
 	(property "Reference" "MCP6002"
-		(at 3.81 3.81 0)
+		(at 3.81 -2.4 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "c0f6b479-45c2-4eff-80a8-4c8adae6360e")
@@ -20,6 +20,7 @@
 		(at 3.81 3.81 0)
 		(unlocked yes)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "fae59237-4c72-406c-98bd-12bda8cd58ff")
 		(effects
 			(font
@@ -669,18 +670,6 @@
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "829dc179-18b6-45dc-9c2e-265a40af39b0")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(fp_text user "${REFERENCE}"
-		(at 3.81 3.81 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "3d2cb1d1-f6da-4032-8f1e-013b2cb0d593")
 		(effects
 			(font
 				(size 1 1)

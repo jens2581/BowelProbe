@@ -1,4 +1,4 @@
-25228833933720321
+25235934142449857
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -378,12 +378,33 @@ BowelProbe
 2
 2
 BowelProbe
+Capacitor-10n
+
+
+0
+2
+2
+BowelProbe
+Capacitor-10u
+
+
+0
+2
+2
+BowelProbe
 DIP794W45P254L959H508Q8
 
 
 0
 8
 8
+BowelProbe
+MAX038CPP
+20 PDIP
+Integrated Circuit
+0
+20
+20
 BowelProbe
 P8
 
@@ -398,6 +419,13 @@ MCP6002-E/P
 0
 8
 8
+BowelProbe
+Resistor-20k
+
+MFR-25FRF52-20K 
+0
+2
+2
 Button_Switch_Keyboard
 SW_Cherry_MX_1.00u_PCB
 Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf

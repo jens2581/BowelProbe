@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "OPA2134"
-		(at 0 0.1 0)
+		(at 0 -5.7 0)
 		(layer "F.SilkS")
 		(uuid "5ed5394f-9e96-4df2-9f00-972207a58d40")
 		(effects
@@ -17,6 +17,7 @@
 	(property "Value" "DIP794W45P254L959H508Q8"
 		(at 10.865 5.607 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "eee3961f-0957-4b2f-8bdd-6a4abdc8f262")
 		(effects
 			(font

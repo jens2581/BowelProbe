@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(tags "TL072ACP ")
 	(property "Reference" "TL072"
-		(at -3.81 -3.81 0)
+		(at -3.81 -10 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "7278d5c7-4403-491b-906f-b726b23080c0")
@@ -20,6 +20,7 @@
 		(at -3.81 -3.81 0)
 		(unlocked yes)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "0a6d5a8a-823e-4dfd-9ebc-f22cfde9cd94")
 		(effects
 			(font
@@ -624,18 +625,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "b1b91414-d9b6-41f2-860a-167c0643f1e5")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(fp_text user "${REFERENCE}"
-		(at -3.81 -3.81 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "ff32c804-038f-4af3-8457-6176aa0c1d32")
 		(effects
 			(font
 				(size 1 1)

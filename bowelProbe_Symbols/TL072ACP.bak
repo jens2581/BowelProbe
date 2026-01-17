@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TL072ACP:P8"
+		(property "Footprint" "BowelProbe:P8"
 			(at 0 0 0)
 			(effects
 				(font
