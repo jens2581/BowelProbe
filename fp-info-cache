@@ -1,4 +1,4 @@
-25235934142449857
+25241240220822531
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -377,6 +377,27 @@ BowelProbe
 0
 2
 2
+BowelProbe
+CT3149-0
+
+
+0
+1
+1
+BowelProbe
+CT3149-2
+
+
+0
+1
+1
+BowelProbe
+CT3149-5
+
+
+0
+1
+1
 BowelProbe
 Capacitor-10n
 

@@ -105,7 +105,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -8.89 -5.08 0)
 					(length 2.54)
 					(name "GND"
@@ -177,7 +177,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -8.89 -15.24 0)
 					(length 2.54)
 					(name "GND"
@@ -231,7 +231,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -8.89 -22.86 0)
 					(length 2.54)
 					(name "GND"
@@ -249,7 +249,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin input line
 					(at -8.89 -25.4 0)
 					(length 2.54)
 					(name "IIN"
@@ -285,7 +285,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin output line
 					(at 8.89 -5.08 180)
 					(length 2.54)
 					(name "OUT"
@@ -303,7 +303,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 8.89 -7.62 180)
 					(length 2.54)
 					(name "GND"
@@ -357,7 +357,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 8.89 -15.24 180)
 					(length 2.54)
 					(name "DGND"
@@ -375,7 +375,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin output line
 					(at 8.89 -17.78 180)
 					(length 2.54)
 					(name "SYNC"
@@ -429,7 +429,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 8.89 -25.4 180)
 					(length 2.54)
 					(name "GND"
@@ -450,7 +450,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x02_Socket"
+		(symbol "Conn_01x01_1"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -466,8 +469,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Socket"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -492,21 +495,13 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 			(property "ki_keywords" "connector"
@@ -527,47 +522,21 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
+			(symbol "Conn_01x01_1_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -594,17 +563,811 @@
 						)
 					)
 				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Conn_01x01_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_2_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
-					(name "Pin_2"
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Conn_01x01_3"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_3_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Conn_01x01_4"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_4_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Conn_01x01_5"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_5_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Conn_01x01_6"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_6_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Conn_01x01_7"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_7_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2736,458 +3499,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+12V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:-12V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "-12V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"-12V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "-12V_0_0"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "-12V_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:-5V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "-5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"-5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "-5V_0_0"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "-5V_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -3290,15 +3601,75 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "FIGURE OUT FOOTPRINTS:\n- POWER\n- PROBE"
+	(text "(LSB)"
 		(exclude_from_sim no)
-		(at 102.616 38.1 0)
+		(at 90.678 153.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "e2f80845-db8b-4f64-bdf7-57579738a10a")
+		(uuid "02402389-c481-4fad-af0f-6de2f042f6d4")
+	)
+	(text "+5V"
+		(exclude_from_sim no)
+		(at 232.41 31.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0c3a2045-865c-4422-aaf8-d9005e6ef12e")
+	)
+	(text "+12V"
+		(exclude_from_sim no)
+		(at 220.472 31.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1f8a481a-192d-48a1-a738-cc42c0e3b6e5")
+	)
+	(text "-5V"
+		(exclude_from_sim no)
+		(at 180.34 31.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "20df269c-d166-4115-a977-b1436eb78b2e")
+	)
+	(text "PROBE"
+		(exclude_from_sim no)
+		(at 229.616 101.346 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3612767a-3cc8-4b63-82f8-da2836d23834")
+	)
+	(text "-12V"
+		(exclude_from_sim no)
+		(at 188.976 31.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5503a1a7-e1c8-4d54-bf08-8ba12bc05431")
+	)
+	(text "(MSB)"
+		(exclude_from_sim no)
+		(at 129.032 153.924 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a65713a5-43ca-490c-9040-b2f2260939c1")
 	)
 	(junction
 		(at 176.53 57.15)
@@ -3493,6 +3864,12 @@
 		(uuid "eeb64359-2639-4d56-9908-5298377b86f9")
 	)
 	(junction
+		(at 208.28 60.96)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "f5ac1559-6fde-4184-a4f0-e31bddf8b701")
+	)
+	(junction
 		(at 199.39 53.34)
 		(diameter 0)
 		(color 132 132 132 1)
@@ -3543,10 +3920,6 @@
 	(no_connect
 		(at 186.69 171.45)
 		(uuid "404dfd48-0667-46c8-90cf-d3621b7f25d6")
-	)
-	(no_connect
-		(at 196.85 151.13)
-		(uuid "44afb6d6-d847-4ef9-8d25-af3ed767cd29")
 	)
 	(no_connect
 		(at 212.09 194.31)
@@ -4303,6 +4676,17 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 17.78) (xy 193.04 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "510f505a-2d07-405d-a88f-3279420ab23b")
+	)
+	(wire
+		(pts
 			(xy 236.22 34.29) (xy 236.22 57.15)
 		)
 		(stroke
@@ -4569,6 +4953,17 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 102.87) (xy 215.9 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "6c33d1e3-1052-4629-bbaf-38902817cec4")
+	)
+	(wire
+		(pts
 			(xy 227.33 81.28) (xy 260.35 81.28)
 		)
 		(stroke
@@ -4617,6 +5012,16 @@
 			(color 255 0 0 1)
 		)
 		(uuid "725d82f5-3a5c-473a-9574-4b60b06e645f")
+	)
+	(wire
+		(pts
+			(xy 213.36 99.06) (xy 215.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72996431-04a2-4641-ac13-637a8be7e9da")
 	)
 	(wire
 		(pts
@@ -4681,6 +5086,17 @@
 			(color 0 0 0 1)
 		)
 		(uuid "7d6ec13a-cfd4-40f3-9c06-e25b5a7a0789")
+	)
+	(wire
+		(pts
+			(xy 208.28 60.96) (xy 208.28 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 194 0 0 1)
+		)
+		(uuid "7da7bf1c-f0c3-473e-bb72-e83c0871df96")
 	)
 	(wire
 		(pts
@@ -5053,7 +5469,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 101.6) (xy 213.36 105.41)
+			(xy 213.36 102.87) (xy 213.36 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5114,6 +5530,17 @@
 			(type default)
 		)
 		(uuid "b52f0458-8bb4-4bb0-a590-34ae09cad9cf")
+	)
+	(wire
+		(pts
+			(xy 236.22 17.78) (xy 236.22 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "b6053647-f276-4b82-be5c-bf5bf1c78cb7")
 	)
 	(wire
 		(pts
@@ -5223,7 +5650,29 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 60.96) (xy 204.47 60.96)
+			(xy 224.79 17.78) (xy 224.79 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "ca4f1741-361c-4311-94b8-e54b9fbd2cb2")
+	)
+	(wire
+		(pts
+			(xy 184.15 17.78) (xy 184.15 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "caee17c2-8992-4928-b7de-de205326185e")
+	)
+	(wire
+		(pts
+			(xy 224.79 60.96) (xy 208.28 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5293,6 +5742,17 @@
 			(type default)
 		)
 		(uuid "d7932e9e-2c9c-4f3c-92cd-fbbaab139ab6")
+	)
+	(wire
+		(pts
+			(xy 208.28 60.96) (xy 204.47 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 194 0 0 1)
+		)
+		(uuid "d8a951f0-5cab-4931-b291-6c68c0c8c87c")
 	)
 	(wire
 		(pts
@@ -5475,6 +5935,28 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 148.59) (xy 196.85 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 194 0 0 1)
+		)
+		(uuid "ed93ee6b-004c-4dea-9cec-f64a34cd065f")
+	)
+	(wire
+		(pts
+			(xy 196.85 148.59) (xy 196.85 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 194 0 0 1)
+		)
+		(uuid "f209c703-055e-4ee3-b8d3-2ea015f69bfc")
+	)
+	(wire
+		(pts
 			(xy 213.36 96.52) (xy 213.36 99.06)
 		)
 		(stroke
@@ -5546,26 +6028,6 @@
 			(color 0 0 0 1)
 		)
 		(uuid "fea8088d-5004-465d-91da-772cc82cc502")
-	)
-	(label "(MSB)"
-		(at 132.08 154.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "81921960-6e70-47ef-a646-2b0facd0f3dc")
-	)
-	(label "(LSB)"
-		(at 93.98 154.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ee08429d-3907-4849-a39b-92958f75f8eb")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5923,6 +6385,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 224.79 17.78 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09127204-0a9f-4ca7-83e7-2ec4bda4903a")
+		(property "Reference" "#PWR050"
+			(at 224.79 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 221.488 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 224.79 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aabf6ca5-f001-4f17-962c-c1bdfcbf8552")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 322.58 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6137,6 +6664,84 @@
 			(project "bowelProbe"
 				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x01_3")
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 193.04 29.21 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16e297e3-9ea5-482a-8021-0df676199660")
+		(property "Reference" "J5"
+			(at 191.262 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 190.5 30.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-2"
+			(at 193.04 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 193.04 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 193.04 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-2/5114523?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlgHwoldOY3BTWvIRXP-Ifk7O&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ6--plL5JvhXOV0g7-njs8DvOH5W1-zYAgOYW2KRe7TUxWEWHSgDDMaAp6TEALw_wcB"
+			(at 193.04 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "799ef577-eef4-48f8-9aae-d0864115601d")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -6368,6 +6973,83 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x01_6")
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 224.79 24.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24eec591-eced-4465-a248-cd97008d8cf1")
+		(property "Reference" "J6"
+			(at 223.012 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 222.25 22.8601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-0"
+			(at 224.79 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 224.79 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 224.79 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-0/5114520?gclsrc=aw.ds&gad_source=1&gad_campaignid=20470400566&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB"
+			(at 224.79 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88a28e2b-f5bb-4271-8131-b091219c9658")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 176.53 49.53 180)
 		(unit 1)
@@ -6530,71 +7212,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 224.79 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "25acbb2a-6e7d-4426-81c5-889559a33f8d")
-		(property "Reference" "#PWR06"
-			(at 224.79 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 228.346 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 224.79 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 224.79 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "acc140fd-6001-4aa3-92d9-a8e6bca6694b")
-		)
-		(instances
-			(project "bowelProbe"
-				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 83.82 99.06 270)
 		(unit 1)
@@ -6656,6 +7273,84 @@
 			(project "bowelProbe"
 				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x01_5")
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 224.79 29.21 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "29c34391-8fb2-4a17-850d-87c3d9d92bca")
+		(property "Reference" "J7"
+			(at 223.012 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 222.25 30.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-2"
+			(at 224.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 224.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 224.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-2/5114523?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlgHwoldOY3BTWvIRXP-Ifk7O&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ6--plL5JvhXOV0g7-njs8DvOH5W1-zYAgOYW2KRe7TUxWEWHSgDDMaAp6TEALw_wcB"
+			(at 224.79 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dae1ba1b-1651-4bab-8817-7a4f292df038")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -7081,6 +7776,15 @@
 				(hide yes)
 			)
 		)
+		(property "Order" "https://www.digikey.com/en/products/detail/texas-instruments/OPA2134PA/254686"
+			(at 172.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "235583f9-d8dd-4cc2-965a-544e24850a5e")
 		)
@@ -7468,7 +8172,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 213.36 105.41 0)
+		(at 213.36 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7476,7 +8180,7 @@
 		(dnp no)
 		(uuid "4876bae3-dc92-4765-be93-a51957ee7081")
 		(property "Reference" "#PWR035"
-			(at 213.36 111.76 0)
+			(at 213.36 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7485,7 +8189,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 213.36 108.966 0)
+			(at 213.36 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7493,7 +8197,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 105.41 0)
+			(at 213.36 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7502,7 +8206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 105.41 0)
+			(at 213.36 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7511,7 +8215,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 105.41 0)
+			(at 213.36 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7670,6 +8374,136 @@
 			(project "bowelProbe"
 				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 193.04 17.78 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e92779a-eb98-4778-87ad-071650e912ec")
+		(property "Reference" "#PWR033"
+			(at 193.04 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.738 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d68ba81-93c3-4ea8-8bd7-f3bbc8130fdf")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 17.78 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ecc8168-ef62-421a-92f7-7a52343d19e8")
+		(property "Reference" "#PWR051"
+			(at 236.22 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.918 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5599d752-7c6d-4de0-914f-6ee5c2d044f5")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -8012,71 +8846,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-12V")
-		(at 193.04 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "62f77de2-a9b2-4967-bf91-3ed7becb0ed8")
-		(property "Reference" "#PWR02"
-			(at 193.04 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-12V"
-			(at 189.484 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-12V\""
-			(at 193.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "184e7121-cc06-46be-b081-ffbf6cc01287")
-		)
-		(instances
-			(project ""
-				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 83.82 96.52 270)
 		(unit 1)
@@ -8222,6 +8991,84 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x01_1")
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 184.15 29.21 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69572050-646c-4f5e-ab8d-c449420c15b3")
+		(property "Reference" "J2"
+			(at 182.372 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 181.61 30.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-2"
+			(at 184.15 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 184.15 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 184.15 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-2/5114523?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlgHwoldOY3BTWvIRXP-Ifk7O&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ6--plL5JvhXOV0g7-njs8DvOH5W1-zYAgOYW2KRe7TUxWEWHSgDDMaAp6TEALw_wcB"
+			(at 184.15 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d99d825-e2df-4411-b3a1-09217a23a9f5")
+		)
+		(instances
+			(project ""
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 81.28 109.22 0)
 		(unit 1)
@@ -8295,6 +9142,83 @@
 			(project "bowelProbe"
 				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x01_2")
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 184.15 24.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "780f5565-3144-413f-89e9-ca9f6578860d")
+		(property "Reference" "J3"
+			(at 182.372 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 181.61 22.8601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-0"
+			(at 184.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 184.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 184.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-0/5114520?gclsrc=aw.ds&gad_source=1&gad_campaignid=20470400566&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB"
+			(at 184.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5872c8f2-c072-45a7-a2dc-e349ae0a7316")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8602,6 +9526,84 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x01_7")
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 236.22 29.21 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "82d0ce1d-1612-4039-bb31-88192987f6d9")
+		(property "Reference" "J9"
+			(at 234.442 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 233.68 30.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-2"
+			(at 236.22 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 236.22 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 236.22 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-2/5114523?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlgHwoldOY3BTWvIRXP-Ifk7O&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ6--plL5JvhXOV0g7-njs8DvOH5W1-zYAgOYW2KRe7TUxWEWHSgDDMaAp6TEALw_wcB"
+			(at 236.22 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "deb8ac1a-5eb5-43b0-b39e-c544ea908215")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4001")
 		(at 229.87 152.4 270)
 		(unit 1)
@@ -8696,72 +9698,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-5V")
-		(at 184.15 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "87930a99-eae1-4b20-95ac-e8ee847027e2")
-		(property "Reference" "#PWR033"
-			(at 184.15 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-5V"
-			(at 179.07 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 184.15 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-5V\""
-			(at 184.15 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70a3a5bc-643a-4d3f-a093-6d3af34edd9b")
-		)
-		(instances
-			(project "bowelProbe"
-				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 81.28 133.35 0)
 		(mirror x)
@@ -8822,76 +9758,6 @@
 			(project "bowelProbe"
 				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 218.44 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8c37bbe1-fd0b-4d26-9f6f-826487a08983")
-		(property "Reference" "J1"
-			(at 219.71 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "Probe"
-			(at 219.964 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 218.44 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 218.44 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 218.44 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9bac995-886d-488c-b9cc-600be281b777")
-		)
-		(pin "2"
-			(uuid "84466364-4567-463a-9240-e22b56c20c5f")
-		)
-		(instances
-			(project ""
-				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -9743,16 +10609,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 236.22 34.29 0)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 236.22 24.13 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "af2fc143-77c8-4290-9c45-65ccbb407206")
-		(property "Reference" "#PWR032"
-			(at 236.22 38.1 0)
+		(uuid "b2131dd0-187c-4ab5-ae56-20ff2c18866e")
+		(property "Reference" "J8"
+			(at 234.442 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 233.68 22.8601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-0"
+			(at 236.22 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9760,16 +10645,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 239.268 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 236.22 34.29 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 236.22 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9777,8 +10654,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 236.22 34.29 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 236.22 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9786,8 +10663,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 236.22 34.29 0)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-0/5114520?gclsrc=aw.ds&gad_source=1&gad_campaignid=20470400566&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB"
+			(at 236.22 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9796,12 +10673,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc9b836b-c84c-4906-9e82-8275c74ff4dc")
+			(uuid "584756e8-657d-418b-9680-79f966c14b57")
 		)
 		(instances
 			(project "bowelProbe"
 				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
-					(reference "#PWR032")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -10683,6 +11560,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 220.98 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9d363a9-f243-4154-92a8-e071c6a380ef")
+		(property "Reference" "J10"
+			(at 226.314 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 219.7101 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-5"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-5/6005536"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91fc4a91-9a08-4e5d-9bdf-906189cc9787")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 191.77 71.12 180)
 		(unit 1)
@@ -11286,6 +12239,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 184.15 17.78 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f3d39238-d559-423b-95c7-1c1e88a99bd5")
+		(property "Reference" "#PWR032"
+			(at 184.15 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.848 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 184.15 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b74e181-ee82-4d3c-96e6-8c69af944923")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 100.33 143.51 270)
 		(mirror x)
@@ -11357,6 +12375,159 @@
 			(project "bowelProbe"
 				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 220.98 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8b79ad0-6575-4c37-ba58-bfb4144fb073")
+		(property "Reference" "J11"
+			(at 226.314 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 219.7101 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-5"
+			(at 220.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 220.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 220.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-5/6005536"
+			(at 220.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ce67428-6276-4c2d-93da-97b076d64e9f")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x01_4")
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 193.04 24.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f928e388-7546-4a6e-b193-c90edc0ebda4")
+		(property "Reference" "J4"
+			(at 191.262 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 190.5 22.8601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "BowelProbe:CT3149-0"
+			(at 193.04 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4846/DS_1768_Catalog.pdf?_gl=1*1v6en4s*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7"
+			(at 193.04 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 193.04 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/cal-test-electronics/CT3149-0/5114520?gclsrc=aw.ds&gad_source=1&gad_campaignid=20470400566&gbraid=0AAAAADrbLljQUq2jRA5TUA7tG8IA3QTG7&gclid=Cj0KCQiAg63LBhDtARIsAJygHZ4bQW1Hl-yMnvacsVNb6spHOenE0ZTvz6GgcATK-2ZWWp3x8ukiqvcaAt9EEALw_wcB"
+			(at 193.04 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ce3286f-8658-48cf-8f53-cebd62713980")
+		)
+		(instances
+			(project "bowelProbe"
+				(path "/b054b76f-bc06-48fe-994a-b07fc1433235"
+					(reference "J4")
 					(unit 1)
 				)
 			)
